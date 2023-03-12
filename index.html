@@ -4,15 +4,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Player choice: <span id="player-choice"> </span></h1>
-    <h1>Computer choice: <span id="computer-choice"> </span></h1>
-    <h1>Player score: <span id="player-score"> </span></h1>
-    <h1>Computer score: <span id="computer-score"></span></h1>
-    <button id="rock">Rock</button>
-    <button id="paper">Paper</button>
-    <button id="scrissors">Scrissors</button>
+    <div id="start-game">
+      <div id="start-title">
+        <h1>Rock <span class="icon">🪨</span></h1>
+        <h1>Paper<span class="icon">📃</span></h1>
+        <h1>Scissors<span class="icon">✂️</span></h1>
+      </div>
+      <button id="start-btn">Start Game</button>
+    </div>
+    <div id="container">
+      <div class="btn-container">
+        <button id="rock">🪨</button>
+        <div class="second-btn-container">
+          <button id="paper">📃</button>
+          <button id="scissors">✂️</button>
+        </div>
+      </div>
+      <div class="text-container">
+        <div class="score-board">
+          <h1>Score</h1>
+          <div class="score">
+            <h1>You <span id="player-score"> </span></h1>
+            <h1>Computer <span id="computer-score"></span></h1>
+          </div>
+        </div>
+        <div class="choices">
+          <h1>Player choice: <span id="player-choice"> </span></h1>
+          <h1>Computer choice: <span id="computer-choice"> </span></h1>
+        </div>
+      </div>
+    </div>
     <script src="app.js"></script>
   </body>
 </html>
