@@ -10,7 +10,8 @@ body {
   font-family: fantasy, sans-serif;
 }
 
-#start-game {
+#start-game,
+#end-game {
   position: absolute;
   min-width: 550px;
   height: 650px;
@@ -23,7 +24,12 @@ body {
   border-radius: 10px;
 }
 
-#start-btn {
+#end-game {
+  visibility: hidden;
+}
+
+#start-btn,
+#end-btn {
   background-color: #5b5e64;
   width: 150px;
   height: 50px;
@@ -31,11 +37,11 @@ body {
   border: 5px solid #44474e;
   border-radius: 10px;
   cursor: pointer;
-  transition: all 0.3s ease-in-out;
   box-shadow: 0 10px #000;
 }
 
-#start-btn:hover {
+#start-btn:hover,
+#end-btn:hover {
   background-color: #44474e;
   border: 3px solid #e8e8e9;
   transform: scale(1.1);
